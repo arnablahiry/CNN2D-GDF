@@ -1,0 +1,19 @@
+# Core scientific libraries
+numpy>=1.23
+scipy>=1.10
+matplotlib>=3.7
+scikit-learn>=1.3
+
+# Deep learning
+torch>=2.0
+torchvision>=0.15
+
+# Optimization and tuning
+optuna>=3.2
+
+# Pylians3 libraries (custom cosmology tools)
+pylians3>=1.0
+
+# Misc
+tqdm>=4.65
+h5py>=3.9

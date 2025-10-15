@@ -4,7 +4,7 @@ This repository contains code and methods for training convolutional neural netw
 
 ---
 
-## 📚 Overview
+## Overview
 
 The study focuses on the **AstroNone** toy dataset (as introduced in *Villaescusa-Navarro et al., 2020*), where 2D Gaussian density fields are generated from a simple analytical power spectrum
 
@@ -18,7 +18,7 @@ The CNN model is trained to predict the value of **A** directly from the generat
 
 ---
 
-## 🧪 Data Generation and Pre-processing
+## Data Generation and Pre-processing
 
 - **Power spectrum definition:** \( P(k) = A / k \)
 - **Parameter sampling:**  
@@ -35,7 +35,7 @@ The goal is to recover A using supervised regression with a CNN.
 
 ---
 
-## 🧠 CNN Architecture
+## CNN Architecture
 
 - Framework: [**PyTorch**](https://pytorch.org/)  
 - **Architecture:**
@@ -58,7 +58,7 @@ The goal is to recover A using supervised regression with a CNN.
 
 ---
 
-## 📈 Theoretical Validation — Fisher Matrix Formalism
+## Theoretical Validation — Fisher Matrix Formalism
 
 To assess whether the CNN extracts the *maximum possible information*, its predictive uncertainty is compared with the theoretical limit derived from the **Fisher information matrix**.
 
@@ -80,7 +80,7 @@ The CNN’s empirical prediction error on A is compared against this theoretical
 
 ---
 
-## 🔍 Experiments and Analysis
+## Experiments and Analysis
 
 ### 1. **Original Gaussian Density Field Maps**
 - CNN trained on unfiltered 64×64 maps.  
@@ -104,7 +104,7 @@ The CNN’s empirical prediction error on A is compared against this theoretical
 
 ---
 
-## ⚙️ Implementation Details
+## Implementation Details
 
 | Component | Description |
 |------------|-------------|
@@ -115,7 +115,7 @@ The CNN’s empirical prediction error on A is compared against this theoretical
 
 ---
 
-## 📊 Expected Outcomes
+## Outcomes
 
 - CNN recovers parameter A with precision close to the Fisher bound, confirming that it captures nearly all information contained in the Gaussian density fields.  
 - As \( k_{\max} \) decreases (or smoothing increases), fewer Fourier modes → larger error in A.  
@@ -123,14 +123,14 @@ The CNN’s empirical prediction error on A is compared against this theoretical
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 CNN2D-GDF/
 ├── src/
-│ ├── Dataset.py ← data generation & preprocessing
-│ ├── Network.py ← CNN architecture
-│ ├── Training.py ← model training with Optuna tuning
-│ ├── Testing.py ← model evaluation
+│   ├── Dataset.py ← data generation & preprocessing
+│   ├── Network.py ← CNN architecture
+│   ├── Training.py ← model training with Optuna tuning
+│   ├── Testing.py ← model evaluation
 ├── results/ ← figures
 ├── requirements.txt
 └── README.md
@@ -138,7 +138,7 @@ CNN2D-GDF/
 
 ---
 
-## 🧩 References
+## References
 
 - [Villaescusa-Navarro et al. 2025](https://arxiv.org/abs/2109.09747)  
 - [Pylians Library](https://pylians3.readthedocs.io/en/master/)  

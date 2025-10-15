@@ -125,6 +125,7 @@ The CNN’s empirical prediction error on A is compared against this theoretical
 
 ## Repository Structure
 
+```
 CNN2D-GDF/
 ├── src/
 │   ├── Dataset.py ← data generation & preprocessing
@@ -134,7 +135,7 @@ CNN2D-GDF/
 ├── results/ ← figures
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 

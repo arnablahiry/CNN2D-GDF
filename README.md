@@ -1,10 +1,6 @@
 # CNN2D-GDF: Convolutional Neural Network Analysis of 2D Gaussian Density Fields
 
-This r- Applied Gaussian smoothing kernels of width 1 px and 2 px.
-- CNN retrained for each case.
-- Since no analytical Fisher bound exists for smoothed maps, the corresponding effective $k_{\max}$ was inferred from the CNN's measured error using:
-
-  $$N_{\text{modes}} = \frac{A_{\min}^2 + A_{\min}A_{\max} + A_{\max}^2}{\sigma_A^2}$$ry contains code and methods for training convolutional neural networks (CNNs) on 2D Gaussian density field (GDF) maps to infer cosmological parameters from analytically defined power spectra. The project builds upon *Villaescusa-Navarro et al. (2020)* and explores the extent to which CNNs can extract information consistent with the Fisher information bound from purely Gaussian fields.
+This repository contains code and methods for training convolutional neural networks (CNNs) on 2D Gaussian density field (GDF) maps to infer cosmological parameters from analytically defined power spectra. The project builds upon *Villaescusa-Navarro et al. (2020)* and explores the extent to which CNNs can extract information consistent with the Fisher information bound from purely Gaussian fields.
 
 ---
 
